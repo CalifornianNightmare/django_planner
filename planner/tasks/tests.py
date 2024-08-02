@@ -1,4 +1,3 @@
-from django.test import TestCase
 
 from django.urls import reverse
 from rest_framework import status
@@ -8,11 +7,9 @@ from .models import Task, TaskPermission
 
 class TaskAPITests(APITestCase):
     def setUp(self):
-        # Создаем тестового пользователя
         self.user = get_user_model().objects.create_user(username='testuser', password='password123', login='testuser_login')
         self.client.login(username='testuser', password='password123')
 
-        # Создаем тестовую задачу
         self.task = Task.objects.create(
             title="Test Task",
             description="This is a test task",
@@ -20,7 +17,6 @@ class TaskAPITests(APITestCase):
             creator=self.user
         )
 
-        # URL для API задач
         self.tasks_url = reverse('task-list')  # Маршрут на список задач
         self.task_detail_url = reverse('task-detail', args=[self.task.id])  # Маршрут на детальную задачу
 
@@ -65,12 +61,10 @@ class TaskAPITests(APITestCase):
 
 class TaskPermissionAPITests(APITestCase):
     def setUp(self):
-        # Создаем уникальных тестовых пользователей для каждого теста
         self.user = get_user_model().objects.create_user(username='testuser1', password='password123', login='testuser1_login')
         self.other_user = get_user_model().objects.create_user(username='testuser2', password='password123', login='testuser2_login')
         self.client.login(username='testuser1', password='password123')
 
-        # Создаем тестовую задачу
         self.task = Task.objects.create(
             title="Test Task",
             description="This is a test task",
@@ -78,7 +72,6 @@ class TaskPermissionAPITests(APITestCase):
             creator=self.user
         )
 
-        # URL для API прав доступа к задачам
         self.permission_url = reverse('taskpermission-list')
 
     def test_create_permission(self):

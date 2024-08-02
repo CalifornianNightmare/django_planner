@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b35fd462-01e2-48e7-8723-97d2c3117e7c" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/.idea/django_planner.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/planner/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/planner/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/planner/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/planner/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/planner/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/tasks/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/tasks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/tasks/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/tasks/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/tasks/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/tasks/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/tasks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/tasks/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +57,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/planner/manage.py" />
-      <option name="PARAMETERS" value="test tasks" />
+      <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />

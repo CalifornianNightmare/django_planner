@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.db.models import Q
-from django.shortcuts import render
+
 from rest_framework import viewsets, permissions, status, serializers
 from rest_framework.response import Response
 
@@ -14,7 +14,6 @@ class TaskPermissionViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
-        # Возвращает только те права доступа, которые связаны с задачами, созданными текущим пользователем
         return TaskPermission.objects.filter(task__creator=self.request.user)
 
     def perform_create(self, serializer):
@@ -57,7 +56,6 @@ class TaskViewSet(viewsets.ModelViewSet):
         serializer.save(creator=self.request.user)
 
     def get_queryset(self):
-        # Фильтрация задач, доступных текущему пользователю
         return Task.objects.filter(creator=self.request.user) | Task.objects.filter(permissions__user=self.request.user, permissions__can_read=True)
 
     def update(self, request, *args, **kwargs):
